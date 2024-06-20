@@ -1,14 +1,14 @@
-﻿@model List<EntityLayer.Entities.Category>
+﻿@model List<EntityLayer.Entities.Product>
 @{
-    ViewBag.Title = "Kategori Listesi";
+    ViewBag.Title = "Ürün Listesi";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Kategoriler</h1>
+    <h1 class="h3 mb-0 text-gray-800">Ürünler</h1>
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="./">Gösterge Paneli</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Kategoriler</li>
+        <li class="breadcrumb-item active" aria-current="page">Ürünler</li>
     </ol>
 </div>
 
@@ -16,23 +16,31 @@
     <div class="col-lg-12">
         <div class="card mb-4">
             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                <a href="/AdminCategory/Create" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i> Yeni Kayıt Ekle</a>
+                <a href="/AdminProduct/Create" class="btn btn-sm btn-primary"><i class="fa fa-plus"></i> Yeni Kayıt Ekle</a>
             </div>
             <div class="table-responsive p-3">
                 <table class="table align-items-center table-flush" id="dataTable">
                     <thead class="thead-light">
                         <tr>
                             <th>ID</th>
+                            <th>RESİM</th>
                             <th>AD</th>
                             <th>AÇIKLAMA</th>
+                            <th>FİYAT</th>
+                            <th>STOK</th>
+                            <th>KATEGORİ</th>
                             <th>İŞLEMLER</th>
                         </tr>
                     </thead>
                     <tfoot>
                         <tr>
                             <th>ID</th>
+                            <th>RESİM</th>
                             <th>AD</th>
                             <th>AÇIKLAMA</th>
+                            <th>FİYAT</th>
+                            <th>STOK</th>
+                            <th>KATEGORİ</th>
                             <th>İŞLEMLER</th>
                         </tr>
                     </tfoot>
@@ -41,12 +49,16 @@
                         {
                             <tr>
                                 <td>@item.Id</td>
+                                <td><img src="~/Content/Image/@item.Image" width="50" height="50" /></td>
                                 <td>@item.Name</td>
                                 <td>@item.Description</td>
-                                <td>
-                                    <a href="/AdminCategory/Update/@item.Id" class="btn btn-warning btn-sm"><i class="fa fa-pen"></i></a>
-                                    <a href="#" class="btn btn-danger btn-sm btnSil" data-id="@item.Id"><i class="fa fa-trash-alt"></i></a>
-                                </td>
+                                <td>@item.Price</td>
+                                <td>@item.Stock</td>
+                                <td>@item.Category.Name</td>
+                            <td>
+                                <a href="/AdminProduct/Update/@item.Id" class="btn btn-warning btn-sm"><i class="fa fa-pen"></i></a>
+                                <a href="#" class="btn btn-danger btn-sm btnSil" data-id="@item.Id"><i class="fa fa-trash-alt"></i></a>
+                            </td>
                             </tr>
                         }
                     </tbody>
@@ -69,7 +81,7 @@
 
                     $.ajax({
                         type: "GET",
-                        url: "/AdminCategory/Delete/" + id,
+                        url: "/AdminProduct/Delete/" + id,
                         success: function () {
                             btn.parent().parent().remove();
                         }
