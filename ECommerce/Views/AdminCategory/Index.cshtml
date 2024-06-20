@@ -43,9 +43,12 @@
                                 <td>@item.Id</td>
                                 <td>@item.Name</td>
                                 <td>@item.Description</td>
-                                <td>
+                                @*@<td>
                                     <a href="/AdminCategory/Update/@item.Id" class="btn btn-warning btn-sm"><i class="fa fa-pen"></i></a>
                                     @Html.ActionLink("Sil","Delete",new { @item.Id }, new { @class="btn btn-danger btn-sm", onclick="return confirm('Silmek istediğinize emin misiniz?')" })
+                                </td>*@
+                                <td>
+                                    <a class="btn btn-danger btn-sm btnSil" data-id="@item.Id"><i class="fa fa-trash-alt"></i></a>
                                 </td>
                             </tr>
                         }
@@ -55,3 +58,31 @@
         </div>
     </div>
 </div>
+
+<script src="~/Scripts/jquery-1.9.0.min.js"></script>
+
+<script>
+    $(function () {
+        $("#dataTable").on("click", ".btnSil", function () {
+            var btn = $(this);
+            bootbox.confirm("Silmek istediğinize emin misiniz?", function (result) {
+
+                if (result) {
+                    var id = btn.data("id");
+
+                    $.ajax({
+                        type: "GET",
+                        url: "/AdminCategory/Delete/" + id,
+                        success: function () {
+                            btn.parent().parent().remove();
+                        }
+                    })
+                } else {
+                    bootbox.confirm("hata oluştu!");
+                }
+
+            });
+
+        })
+    });
+</script>
