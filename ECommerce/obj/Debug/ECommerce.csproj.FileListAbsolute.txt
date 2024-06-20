@@ -86,3 +86,6 @@ C:\Users\bugra\source\repos\ECommerce\ECommerce\obj\Debug\ECommerce.csproj.CoreC
 C:\Users\bugra\source\repos\ECommerce\ECommerce\obj\Debug\ECommerce.csproj.Up2Date
 C:\Users\bugra\source\repos\ECommerce\ECommerce\obj\Debug\ECommerce.dll
 C:\Users\bugra\source\repos\ECommerce\ECommerce\obj\Debug\ECommerce.pdb
+C:\Users\bugra\source\repos\ECommerce\ECommerce\bin\BusinessLayer.dll.config
+C:\Users\bugra\source\repos\ECommerce\ECommerce\bin\EntityFramework.SqlServer.dll
+C:\Users\bugra\source\repos\ECommerce\ECommerce\bin\EntityFramework.SqlServer.xml
