@@ -1,0 +1,6 @@
+C:\Users\bugra\source\repos\ECommerce\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\bugra\source\repos\ECommerce\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\bugra\source\repos\ECommerce\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\bugra\source\repos\ECommerce\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\bugra\source\repos\ECommerce\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\bugra\source\repos\ECommerce\BusinessLayer\obj\Debug\BusinessLayer.pdb

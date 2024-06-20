@@ -1,0 +1,17 @@
+C:\Users\bugra\source\repos\ECommerce\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\bugra\source\repos\ECommerce\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\bugra\source\repos\ECommerce\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\bugra\source\repos\ECommerce\DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\bugra\source\repos\ECommerce\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bugra\source\repos\ECommerce\DataAccessLayer\bin\Debug\EntityLayer.dll
+C:\Users\bugra\source\repos\ECommerce\DataAccessLayer\bin\Debug\EntityLayer.pdb
+C:\Users\bugra\source\repos\ECommerce\DataAccessLayer\bin\Debug\EntityLayer.dll.config
+C:\Users\bugra\source\repos\ECommerce\DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\bugra\source\repos\ECommerce\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bugra\source\repos\ECommerce\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\bugra\source\repos\ECommerce\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\bugra\source\repos\ECommerce\DataAccessLayer\obj\Debug\DataAcce.E67BD773.Up2Date
+C:\Users\bugra\source\repos\ECommerce\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\bugra\source\repos\ECommerce\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\bugra\source\repos\ECommerce\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.Init.resources
+C:\Users\bugra\source\repos\ECommerce\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
